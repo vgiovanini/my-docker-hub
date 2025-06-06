@@ -6,6 +6,8 @@ on:
 jobs:
   call_api:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Fazer requisição HTTP
         run: |
